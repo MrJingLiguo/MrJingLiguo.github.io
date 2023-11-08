@@ -1,26 +1,63 @@
 {
-  "tages":["套管","紧固件螺母","平垫片","销轴","六角增高螺母"],
+  "tages":["套管","紧固螺母","平垫片","销轴","六角增高螺母"],
   "data": [
     {
-      "name": "螺母",
+      "name": "套管",
       "images": [
         {
           "image_name": "10w",
           "path":"./asses/images/luomu/w1.jpg"
         },
         {
+          "image_name": "20w",
+          "path":"./asses/images/luomu/w2.jpg"
+        },
+        {
+          "image_name": "30w",
+          "path":"./asses/images/luomu/w3.jpg"
+        },        {
+          "image_name": "11w",
+          "path":"./asses/images/luomu/w2.jpg"
+        }
+
+      ]
+    },
+    {
+      "name": "紧固螺母",
+      "images": [
+        {
+          "image_name": "10a",
+          "path":"./asses/images/luosi/w35.jpg"
+        },
+        {
+          "image_name": "20a",
+          "path":"./asses/images/luosi/w36.jpg"
+        },
+        {
+          "image_name": "30a",
+          "path":"./asses/images/luosi/w37.jpg"
+        },        {
+          "image_name": "11a",
+          "path":"./asses/images/luosi/w38.jpg"
+        },        {
           "image_name": "10w",
           "path":"./asses/images/luomu/w1.jpg"
         },
         {
-          "image_name": "10w",
-          "path":"./asses/images/luomu/w1.jpg"
+          "image_name": "20w",
+          "path":"./asses/images/luomu/w2.jpg"
+        },
+        {
+          "image_name": "30w",
+          "path":"./asses/images/luomu/w3.jpg"
         },        {
-          "image_name": "10w",
-          "path":"./asses/images/luomu/w1.jpg"
+          "image_name": "11w",
+          "path":"./asses/images/luomu/w2.jpg"
         }
 
       ]
     }
-  ]
+  ],
+  "phone": "17703195352",
+  "address": "河北省邢台市广宗县开发区"
 }

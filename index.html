@@ -292,21 +292,19 @@
 ">
                     <div class="left" style="border-radius: 5px; /* Rounded corners for better aesthetics on smaller screens */
                     margin: 0; /* Remove horizontal margin for smaller screens */
-                    ">
-                        <ul>
-                            <li style="margin-top: 20px;"><a href="javascript:void(0);"
-                                    onclick="showCategory('套管')">套管</a></li>
-                            <li><a href="javascript:void(0);" onclick="showCategory('紧固螺母')">紧固螺母</a></li>
-                            <li><a href="javascript:void(0);" onclick="showCategory('平垫片')">平垫片</a></li>
-                            <li><a href="javascript:void(0);" onclick="showCategory('销轴')">销轴</a></li>
-                            <li><a href="javascript:void(0);" onclick="showCategory('六角增高螺母')">六角增高螺母</a></li>
-                            <!-- 添加其他产品分类链接 -->
+                    " >
+                        <ul id="tages">
+<!--                            <li><a href="javascript:void(0);" onclick="showCategory('套管')">套管</a></li>-->
+<!--                            <li><a href="javascript:void(0);" onclick="showCategory('紧固螺母')">紧固螺母</a></li>-->
+<!--                            <li><a href="javascript:void(0);" onclick="showCategory('平垫片')">平垫片</a></li>-->
+<!--                            <li><a href="javascript:void(0);" onclick="showCategory('销轴')">销轴</a></li>-->
+<!--                            <li><a href="javascript:void(0);" onclick="showCategory('六角增高螺母')">六角增高螺母</a></li>-->
+<!--                            &lt;!&ndash; 添加其他产品分类链接 &ndash;&gt;-->
                         </ul>
                     </div>
 
-                    <div class="right" style="overflow-y: auto;">
+                    <div class="right" style="overflow-y: auto;" id="tages_data">
                         <section id="套管">
-
                                 <div class="product-images">
                                     <div class="product-item">
                                         <img src="./asses/images/luomu/w1.jpg" alt="套管产品图片 1">
@@ -328,40 +326,6 @@
                                     </div>
 
                                 </div>
-                        </section>
-                        <section id="紧固螺母">
-                            <div class="product-images">
-                                <div class="product-item" >
-                                    <img src="./asses/images/luosi/w35.jpg" alt="紧固螺母产品图片 1">
-                                    <div style="display: flex;justify-content: center;align-items: center;">
-                                        <span>内径：10 外径：20</span>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <img src="./asses/images/luosi/w36.jpg" alt="紧固螺母产品图片 2">
-                                    <div style="display: flex;justify-content: center;align-items: center;">
-                                        <span>内径：10 外径：20</span>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <img src="./asses/images/luosi/w37.jpg" alt="紧固螺母产品图片 3">
-                                    <div style="display: flex;justify-content: center;align-items: center;">
-                                        <span>内径：10 外径：20</span>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <img src="./asses/images/luosi/w38.jpg" alt="紧固螺母产品图片 4">
-                                    <div style="display: flex;justify-content: center;align-items: center;">
-                                        <span>内径：10 外径：20</span>
-                                    </div>
-                                </div>
-                                <div class="product-item">
-                                    <img src="./asses/images/luomu/w3.jpg" alt="套管产品图片 3">
-                                    <div style="display: flex;justify-content: center;align-items: center;">
-                                        <span>内径：10 外径：20</span>
-                                    </div>
-                                </div>
-                            </div>
                         </section>
 
                     </div>
@@ -396,11 +360,11 @@
 
             <div style="margin: 0 auto">
                 <h3>地址</h3>
-                <p>河北省邢台市广宗县开发区</p>
+                <p id="address"></p>
             </div>
             <div style="margin: 0 auto">
                 <h3>手机号</h3>
-                <p>177035345452</p>
+                <p id="phone1"></p>
             </div>
         </div>
     </div>
@@ -414,7 +378,7 @@
             <img src="./asses/images/wx.jpg" alt="微信二维码" onclick="saveImage(this.src)">
             <div>
                 <h2 >手机号(点击复制)</h2>
-                <h2 onclick="copyPhoneNumber()" id="phone">17332981042</h2>
+                <h2 onclick="copyPhoneNumber()" id="phone"></h2>
             </div>
             <div style="display: flex;justify-content: center;align-items: center">
                 <button id="stopBtn" style="background-color: #343f52;border-radius: 25%;color: #fff;">
@@ -428,6 +392,48 @@
     </buttom>
 
     <script>
+        // 异步加载JSON数据
+        // 异步加载JSON数据
+        fetch('./asses/data/data.json')
+            .then(response => response.json())
+            .then(data => {
+                const contentDiv = document.getElementById('tages');
+                const dataDiv = document.getElementById('tages_data');
+                const phoneDiv = document.getElementById('phone');
+                const phone1Div = document.getElementById('phone1');
+                const addressDiv = document.getElementById('address');
+
+                data.tages.forEach(tag => {
+                    contentDiv.innerHTML += "<li ><a href=\"javascript:void(0);\" onClick=\"showCategory('" + tag + "')\">"+tag+"</a></li>";
+                });
+
+                // 循环显示数据
+                data.data.forEach(item => {
+                    dataDiv.innerHTML += `<section id="${item.name}">
+                <div class="product-images">
+                    ${item.images.map(image => `
+                        <div class="product-item">
+                            <img src="${image.path}" alt="${image.image_name}">
+                            <div style="display: flex;justify-content: center;align-items: center;">
+                                <span>${image.image_name}</span>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </section>`;
+                });
+
+
+
+                // 显示电话号码和地址
+                phoneDiv.innerHTML = data.phone;
+                phone1Div.innerHTML = data.phone;
+                addressDiv.innerHTML = data.address;
+            })
+            .catch(error => {
+                console.error('读取JSON数据时出错：', error);
+            });
+
         function saveImage(src) {
             let link = document.createElement('a');
             link.href = src;
