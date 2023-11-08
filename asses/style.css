@@ -10,52 +10,46 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f6f7f9;
     height: 100vh; /* Make sure the content fills the viewport height */
-    
-    
-}
-main{
-    width: 100%;
-    
 }
 
-.container{
-    margin: 0 200px;
+main {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px; /* Set a maximum width for the container */
     background-color: #ffffff;
-    position: relative;
-    bottom: 180px;
-    left: auto;
-    right: auto;
     border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculations */
+    position: relative;
+    bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section {
-
-    padding: 20px;
-
-    margin: 10px 0;
-
+    margin: 20px 0;
+    padding: 10px;
 }
 
 h1 {
-    color: #333;
     font-size: 28px;
     margin-bottom: 15px;
 }
 
 h2 {
-    color: #fff;
     font-size: 24px;
-    margin: 20px 0;
+    margin: 10px 0;
+    text-align: center;
 }
 
 h3 {
-    color: #fff;
     font-size: 20px;
     margin: 15px 0;
 }
 
 p {
-    color: #fff;
     font-size: 16px;
     line-height: 1.6;
     margin: 15px 0;
@@ -74,7 +68,6 @@ a {
     text-decoration: none;
     transition: color 0.3s;
     font-size: 20px;
-    
 }
 
 a:hover {
@@ -83,16 +76,15 @@ a:hover {
 
 .product-category {
     display: flex;
+    flex-wrap: wrap; /* Wrap the category links when the screen size is reduced */
 }
 
 .product-category .left {
-    width: auto;
+    width: 100%; /* Make the left column take full width on small screens */
     border-radius: 5px;
-    margin: 0 100px;
 }
 
-.product-category .left u li{
-
+.product-category .left u li {
     margin: 20px 10px;
 }
 
@@ -105,38 +97,223 @@ a:hover {
 
 .product-category .left a:hover {
     border-bottom: 1px solid #000000;
-
 }
 
 .product-category .right {
-    width: 80%;
-    padding: 10px;
+    width: 100%; /* Make the right column take full width on small screens */
+    height: 400px;
+    overflow: auto;
 }
-
-
 
 .product-images {
     display: flex;
     flex-wrap: wrap;
 }
+.wxcontent{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 160px;
 
+}
+#contact-info{
+    max-width: 60%;
+    margin: 0 auto;
+    background-color: #f6f7e9;
+    padding: 0 30px;
+    border-radius: 10px;
+
+}
+#contact-info img{
+    width: 100%;
+    height: auto;
+}
 .product-images img {
-    width: 150px;
-    height: 150px;
+    width: 100%; /* Make images take full width of their container */
+    max-width: 150px; /* Set a maximum width for the images */
+    height: auto;
     margin: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-
+.chanpin{
+    padding: 100px 0;justify-content: center;align-items: center;display: flex;
+}
 .contact {
-    height: 280px;
-    background-color: #343f52;
     text-align: center;
     padding: 20px;
     border-radius: 5px;
     margin-top: -240px;
-
-
+    color: #fff;
+    background-color: #343f52;
 }
 
-/* Add more CSS rules as needed to customize the styling of your page */
+.product-item{
+    display: block;
+    margin: 10px 20px;
+}
+
+/* Media queries for responsive design */
+
+@media screen and (min-width: 768px) {
+    .product-item{
+        display: block;
+        margin: 10px 20px;
+        width: auto;
+        font-size:13px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .chanpin{
+        padding: 50px 0;justify-content: center;align-items: center;display: flex;
+    }
+    .container {
+        position: relative;
+        bottom: 40px;
+        margin: 0 auto;
+    }
+    svg{
+        width: auto;
+        height: auto;
+        border-radius: 5%;
+    }
+
+    p{
+        font-size: 13px;
+    }
+    a{
+        font-size: 14px;
+    }
+    ul li{
+        margin-bottom: 14px;
+    }
+    .container {
+        padding: 40px; /* Increase the container padding for larger screens */
+    }
+
+
+    .section {
+        margin: 40px 0; /* Increase the section margins for larger screens */
+    }
+
+    .product-category .left {
+        width: 20%; /* Set a fixed width for the left column on larger screens */
+    }
+
+    .product-category .right {
+        width: 80%; /* Set a fixed width for the right column on larger screens */
+        height: 400px;
+    }
+    .contact {
+        margin-top: -80px;
+    }
+    .lianxi{
+        position: fixed;bottom: 200px;right: 100px;border-radius: 50%;background-color: #fff;
+        border: #343f52 solid 1px;
+    }
+    .scale-svg {
+        animation-name: scale-up;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes scale-up {
+        from { transform: scale(1); }
+        to { transform: scale(1.2); }
+    }
+    #contact-info{
+        bottom: auto;
+        background-color: #f6f7e9;
+        padding: 30px;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    #contact-info img{
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+
+
+
+    .product-item{
+        display: block;
+        margin: 10px 20px;
+        width: 35%;
+        font-size:13px;
+        text-align: center;
+        justify-content: center;
+    }
+    .chanpin{
+        padding: 50px 0;justify-content: center;align-items: center;display: flex;
+    }
+    .container {
+        position: relative;
+        bottom: 40px;
+        margin: 0 auto;
+    }
+
+    a{
+        font-size: 14px;
+    }
+    p{
+        font-size: 13px;
+    }
+    svg{
+        width: auto;
+        height: auto;
+        border-radius: 5%;
+    }
+    ul li{
+        margin-bottom: 14px;
+    }
+    .container {
+        padding: 20px; /* Reduce container padding for smaller screens */
+    }
+
+    .section {
+        margin: 20px 0; /* Reduce section margins for smaller screens */
+    }
+
+    .product-category .left {
+        width: 100%; /* Take full width for the left column on smaller screens */
+    }
+
+    .product-category .right {
+        width: 100%; /* Take full width for the right column on smaller screens */
+        height: auto;
+    }
+    .contact {
+        margin-top: -80px;
+    }
+    .lianxi {
+        position: fixed;
+        bottom: 100px;
+        right: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: #343f52 solid 1px;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .scale-svg {
+        animation-name: scale-up;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes scale-up {
+        from { transform: scale(1); }
+        to { transform: scale(1.2); }
+    }
+}

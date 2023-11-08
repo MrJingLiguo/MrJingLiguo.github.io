@@ -1,0 +1,26 @@
+{
+  "tages":["套管","紧固件螺母","平垫片","销轴","六角增高螺母"],
+  "data": [
+    {
+      "name": "螺母",
+      "images": [
+        {
+          "image_name": "10w",
+          "path":"./asses/images/luomu/w1.jpg"
+        },
+        {
+          "image_name": "10w",
+          "path":"./asses/images/luomu/w1.jpg"
+        },
+        {
+          "image_name": "10w",
+          "path":"./asses/images/luomu/w1.jpg"
+        },        {
+          "image_name": "10w",
+          "path":"./asses/images/luomu/w1.jpg"
+        }
+
+      ]
+    }
+  ]
+}
