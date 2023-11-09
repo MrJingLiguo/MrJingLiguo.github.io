@@ -1,66 +1,134 @@
 {
     "tages": [
-        "六角",
-        "螺丝",
-        "螺母"
+        "双头螺栓",
+        "异型件",
+        "热镀锌螺栓",
+        "电镀螺栓",
+        "钢结构螺栓",
+        "钻尾丝",
+        "高强度螺栓"
     ],
     "data": [
         {
-            "name": "六角",
+            "name": "双头螺栓",
+            "images": []
+        },
+        {
+            "name": "异型件",
             "images": [
                 {
-                    "image_name": "w2",
-                    "path": "./asses/images/六角/w2.jpg"
+                    "image_name": "异型件1",
+                    "path": "./asses/images/异型件/异型件1.jpg"
                 },
                 {
-                    "image_name": "w4",
-                    "path": "./asses/images/六角/w4.jpg"
+                    "image_name": "异型件10",
+                    "path": "./asses/images/异型件/异型件10.jpg"
                 },
                 {
-                    "image_name": "w5",
-                    "path": "./asses/images/六角/w5.jpg"
+                    "image_name": "异型件11",
+                    "path": "./asses/images/异型件/异型件11.jpg"
+                },
+                {
+                    "image_name": "异型件12",
+                    "path": "./asses/images/异型件/异型件12.jpg"
+                },
+                {
+                    "image_name": "异型件2",
+                    "path": "./asses/images/异型件/异型件2.jpg"
+                },
+                {
+                    "image_name": "异型件3",
+                    "path": "./asses/images/异型件/异型件3.jpg"
+                },
+                {
+                    "image_name": "异型件4",
+                    "path": "./asses/images/异型件/异型件4.jpg"
+                },
+                {
+                    "image_name": "异型件5",
+                    "path": "./asses/images/异型件/异型件5.jpg"
+                },
+                {
+                    "image_name": "异型件6",
+                    "path": "./asses/images/异型件/异型件6.jpg"
+                },
+                {
+                    "image_name": "异型件7",
+                    "path": "./asses/images/异型件/异型件7.jpg"
+                },
+                {
+                    "image_name": "异型件8",
+                    "path": "./asses/images/异型件/异型件8.jpg"
+                },
+                {
+                    "image_name": "异型件9",
+                    "path": "./asses/images/异型件/异型件9.jpg"
                 }
             ]
         },
         {
-            "name": "螺丝",
+            "name": "热镀锌螺栓",
             "images": [
                 {
-                    "image_name": "w35",
-                    "path": "./asses/images/螺丝/w35.jpg"
+                    "image_name": "热镀锌螺栓1",
+                    "path": "./asses/images/热镀锌螺栓/热镀锌螺栓1.jpg"
                 },
                 {
-                    "image_name": "w36",
-                    "path": "./asses/images/螺丝/w36.jpg"
+                    "image_name": "热镀锌螺栓2",
+                    "path": "./asses/images/热镀锌螺栓/热镀锌螺栓2.jpg"
                 },
                 {
-                    "image_name": "w37",
-                    "path": "./asses/images/螺丝/w37.jpg"
+                    "image_name": "热镀锌螺栓3",
+                    "path": "./asses/images/热镀锌螺栓/热镀锌螺栓3.jpg"
                 },
                 {
-                    "image_name": "w38",
-                    "path": "./asses/images/螺丝/w38.jpg"
+                    "image_name": "热镀锌螺栓4",
+                    "path": "./asses/images/热镀锌螺栓/热镀锌螺栓4.jpg"
+                },
+                {
+                    "image_name": "热镀锌螺栓5",
+                    "path": "./asses/images/热镀锌螺栓/热镀锌螺栓5.jpg"
                 }
             ]
         },
         {
-            "name": "螺母",
+            "name": "电镀螺栓",
+            "images": []
+        },
+        {
+            "name": "钢结构螺栓",
             "images": [
                 {
-                    "image_name": "w1",
-                    "path": "./asses/images/螺母/w1.jpg"
+                    "image_name": "钢结构大六角螺栓1",
+                    "path": "./asses/images/钢结构螺栓/钢结构大六角螺栓1.jpg"
                 },
                 {
-                    "image_name": "w2",
-                    "path": "./asses/images/螺母/w2.jpg"
+                    "image_name": "钢结构大六角螺栓2",
+                    "path": "./asses/images/钢结构螺栓/钢结构大六角螺栓2.jpg"
                 },
                 {
-                    "image_name": "w3",
-                    "path": "./asses/images/螺母/w3.jpg"
+                    "image_name": "钢结构大六角螺栓3",
+                    "path": "./asses/images/钢结构螺栓/钢结构大六角螺栓3.jpg"
+                },
+                {
+                    "image_name": "钢结构大六角螺栓4",
+                    "path": "./asses/images/钢结构螺栓/钢结构大六角螺栓4.jpg"
+                },
+                {
+                    "image_name": "钢结构大六角螺栓5",
+                    "path": "./asses/images/钢结构螺栓/钢结构大六角螺栓5.jpg"
                 }
             ]
+        },
+        {
+            "name": "钻尾丝",
+            "images": []
+        },
+        {
+            "name": "高强度螺栓",
+            "images": []
         }
     ],
-    "phone": "大苏打萨达飒飒的阿萨",
-    "address": "大大撒大沙发的事故发生的故事"
+    "phone": "17703195352",
+    "address": "河北省邢台市广宗县开发区"
 }
