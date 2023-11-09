@@ -294,12 +294,7 @@
                     margin: 0; /* Remove horizontal margin for smaller screens */
                     " >
                         <ul id="tages">
-<!--                            <li><a href="javascript:void(0);" onclick="showCategory('套管')">套管</a></li>-->
-<!--                            <li><a href="javascript:void(0);" onclick="showCategory('紧固螺母')">紧固螺母</a></li>-->
-<!--                            <li><a href="javascript:void(0);" onclick="showCategory('平垫片')">平垫片</a></li>-->
-<!--                            <li><a href="javascript:void(0);" onclick="showCategory('销轴')">销轴</a></li>-->
-<!--                            <li><a href="javascript:void(0);" onclick="showCategory('六角增高螺母')">六角增高螺母</a></li>-->
-<!--                            &lt;!&ndash; 添加其他产品分类链接 &ndash;&gt;-->
+
                         </ul>
                     </div>
 
@@ -429,6 +424,8 @@
                 phoneDiv.innerHTML = data.phone;
                 phone1Div.innerHTML = data.phone;
                 addressDiv.innerHTML = data.address;
+                // 初始时只显示第一个分类
+                showCategory(data.tages[0]);
             })
             .catch(error => {
                 console.error('读取JSON数据时出错：', error);
@@ -488,8 +485,7 @@
             }
         }
 
-        // 初始时只显示第一个分类
-        showCategory('套管');
+
     </script>
 </body>
 

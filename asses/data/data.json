@@ -1,63 +1,66 @@
 {
-  "tages":["套管","紧固螺母","平垫片","销轴","六角增高螺母"],
-  "data": [
-    {
-      "name": "套管",
-      "images": [
+    "tages": [
+        "六角",
+        "螺丝",
+        "螺母"
+    ],
+    "data": [
         {
-          "image_name": "10w",
-          "path":"./asses/images/luomu/w1.jpg"
+            "name": "六角",
+            "images": [
+                {
+                    "image_name": "w2",
+                    "path": "./asses/images/六角/w2.jpg"
+                },
+                {
+                    "image_name": "w4",
+                    "path": "./asses/images/六角/w4.jpg"
+                },
+                {
+                    "image_name": "w5",
+                    "path": "./asses/images/六角/w5.jpg"
+                }
+            ]
         },
         {
-          "image_name": "20w",
-          "path":"./asses/images/luomu/w2.jpg"
+            "name": "螺丝",
+            "images": [
+                {
+                    "image_name": "w35",
+                    "path": "./asses/images/螺丝/w35.jpg"
+                },
+                {
+                    "image_name": "w36",
+                    "path": "./asses/images/螺丝/w36.jpg"
+                },
+                {
+                    "image_name": "w37",
+                    "path": "./asses/images/螺丝/w37.jpg"
+                },
+                {
+                    "image_name": "w38",
+                    "path": "./asses/images/螺丝/w38.jpg"
+                }
+            ]
         },
         {
-          "image_name": "30w",
-          "path":"./asses/images/luomu/w3.jpg"
-        },        {
-          "image_name": "11w",
-          "path":"./asses/images/luomu/w2.jpg"
+            "name": "螺母",
+            "images": [
+                {
+                    "image_name": "w1",
+                    "path": "./asses/images/螺母/w1.jpg"
+                },
+                {
+                    "image_name": "w2",
+                    "path": "./asses/images/螺母/w2.jpg"
+                },
+                {
+                    "image_name": "w3",
+                    "path": "./asses/images/螺母/w3.jpg"
+                }
+            ]
         }
-
-      ]
-    },
-    {
-      "name": "紧固螺母",
-      "images": [
-        {
-          "image_name": "10a",
-          "path":"./asses/images/luosi/w35.jpg"
-        },
-        {
-          "image_name": "20a",
-          "path":"./asses/images/luosi/w36.jpg"
-        },
-        {
-          "image_name": "30a",
-          "path":"./asses/images/luosi/w37.jpg"
-        },        {
-          "image_name": "11a",
-          "path":"./asses/images/luosi/w38.jpg"
-        },        {
-          "image_name": "10w",
-          "path":"./asses/images/luomu/w1.jpg"
-        },
-        {
-          "image_name": "20w",
-          "path":"./asses/images/luomu/w2.jpg"
-        },
-        {
-          "image_name": "30w",
-          "path":"./asses/images/luomu/w3.jpg"
-        },        {
-          "image_name": "11w",
-          "path":"./asses/images/luomu/w2.jpg"
-        }
-
-      ]
-    }
-  ],
-  "phone": "17703195352",
-  "address": "河北省邢台市广宗县开发区"
+    ],
+    "phone": "9087u2324",
+    "address": "河北省石家庄市"
 }
