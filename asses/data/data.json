@@ -7,17 +7,60 @@
     "data": [
         {
             "name": "六角",
-            "images": []
+            "images": [
+                {
+                    "image_name": "w2",
+                    "path": "./asses/images/六角/w2.jpg"
+                },
+                {
+                    "image_name": "w4",
+                    "path": "./asses/images/六角/w4.jpg"
+                },
+                {
+                    "image_name": "w5",
+                    "path": "./asses/images/六角/w5.jpg"
+                }
+            ]
         },
         {
             "name": "螺丝",
-            "images": []
+            "images": [
+                {
+                    "image_name": "w35",
+                    "path": "./asses/images/螺丝/w35.jpg"
+                },
+                {
+                    "image_name": "w36",
+                    "path": "./asses/images/螺丝/w36.jpg"
+                },
+                {
+                    "image_name": "w37",
+                    "path": "./asses/images/螺丝/w37.jpg"
+                },
+                {
+                    "image_name": "w38",
+                    "path": "./asses/images/螺丝/w38.jpg"
+                }
+            ]
         },
         {
             "name": "螺母",
-            "images": []
+            "images": [
+                {
+                    "image_name": "w1",
+                    "path": "./asses/images/螺母/w1.jpg"
+                },
+                {
+                    "image_name": "w2",
+                    "path": "./asses/images/螺母/w2.jpg"
+                },
+                {
+                    "image_name": "w3",
+                    "path": "./asses/images/螺母/w3.jpg"
+                }
+            ]
         }
     ],
-    "phone": "修复问题",
-    "address": "开发区"
+    "phone": "的就是快乐",
+    "address": "大大撒旦发射点官方"
 }
