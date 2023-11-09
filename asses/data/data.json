@@ -11,7 +11,28 @@
     "data": [
         {
             "name": "双头螺栓",
-            "images": []
+            "images": [
+                {
+                    "image_name": "双头螺栓1",
+                    "path": "./asses/images/双头螺栓/双头螺栓1.png"
+                },
+                {
+                    "image_name": "双头螺栓2",
+                    "path": "./asses/images/双头螺栓/双头螺栓2.png"
+                },
+                {
+                    "image_name": "双头螺栓3",
+                    "path": "./asses/images/双头螺栓/双头螺栓3.png"
+                },
+                {
+                    "image_name": "双头螺栓4",
+                    "path": "./asses/images/双头螺栓/双头螺栓4.png"
+                },
+                {
+                    "image_name": "双头螺栓5",
+                    "path": "./asses/images/双头螺栓/双头螺栓5.png"
+                }
+            ]
         },
         {
             "name": "异型件",
@@ -93,7 +114,28 @@
         },
         {
             "name": "电镀螺栓",
-            "images": []
+            "images": [
+                {
+                    "image_name": "电镀螺栓1",
+                    "path": "./asses/images/电镀螺栓/电镀螺栓1.png"
+                },
+                {
+                    "image_name": "电镀螺栓2",
+                    "path": "./asses/images/电镀螺栓/电镀螺栓2.png"
+                },
+                {
+                    "image_name": "电镀螺栓3",
+                    "path": "./asses/images/电镀螺栓/电镀螺栓3.png"
+                },
+                {
+                    "image_name": "电镀螺栓4",
+                    "path": "./asses/images/电镀螺栓/电镀螺栓4.png"
+                },
+                {
+                    "image_name": "电镀螺栓5",
+                    "path": "./asses/images/电镀螺栓/电镀螺栓5.png"
+                }
+            ]
         },
         {
             "name": "钢结构螺栓",
@@ -122,11 +164,53 @@
         },
         {
             "name": "钻尾丝",
-            "images": []
+            "images": [
+                {
+                    "image_name": "钻尾丝1",
+                    "path": "./asses/images/钻尾丝/钻尾丝1.png"
+                },
+                {
+                    "image_name": "钻尾丝2",
+                    "path": "./asses/images/钻尾丝/钻尾丝2.png"
+                },
+                {
+                    "image_name": "钻尾丝3",
+                    "path": "./asses/images/钻尾丝/钻尾丝3.png"
+                },
+                {
+                    "image_name": "钻尾丝4",
+                    "path": "./asses/images/钻尾丝/钻尾丝4.png"
+                },
+                {
+                    "image_name": "钻尾丝5",
+                    "path": "./asses/images/钻尾丝/钻尾丝5.png"
+                }
+            ]
         },
         {
             "name": "高强度螺栓",
-            "images": []
+            "images": [
+                {
+                    "image_name": "高强度螺栓1",
+                    "path": "./asses/images/高强度螺栓/高强度螺栓1.png"
+                },
+                {
+                    "image_name": "高强度螺栓2",
+                    "path": "./asses/images/高强度螺栓/高强度螺栓2.png"
+                },
+                {
+                    "image_name": "高强度螺栓3",
+                    "path": "./asses/images/高强度螺栓/高强度螺栓3.png"
+                },
+                {
+                    "image_name": "高强度螺栓4",
+                    "path": "./asses/images/高强度螺栓/高强度螺栓4.png"
+                },
+                {
+                    "image_name": "高强度螺栓5",
+                    "path": "./asses/images/高强度螺栓/高强度螺栓5.png"
+                }
+            ]
         }
     ],
     "phone": "17703195352",
